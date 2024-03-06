@@ -29,4 +29,11 @@ public class Human {
     // thành phần của lớp: gọi là phương thức
     // mô tả cho hành vi của đối tượng
     // ngoài ra, còn có các cặp getter/setter để lấy dữ liệu hoặc cài đặt dữ liệu cho thuộc tính
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

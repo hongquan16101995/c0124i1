@@ -1,0 +1,10 @@
+- trong oop thì mọi thứ đều là lớp, đối tượng
+- các lớp mà chuyên dùng để tạo các đối tượng chứa dữ liệu
+=> lớp tạo object (các thực thể); thường được mô hình từ đời sống thức tế
+==> chỉ chứa: thuộc tính, constructor, getter/setter, toString
+- các lớp hỗ trợ thao tác với các đối tướng được sinh ra ở các lớp nói trên
+=> lớp quản lý đối tượng (các service)
+==> chứa: thuộc tính (cấu trúc dữ liệu), phương thức thao tác
+- các lớp thao tác với việc lưu trữ dữ liệu của các đối tượng trên
+=> lớp thao tác với file, database (các repo)
+==> chứa: phương thức đặc thù thao tác với dữ liệu
