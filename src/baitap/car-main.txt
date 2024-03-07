@@ -1,0 +1,9 @@
+- Xây dựng 1 lớp bất kỳ có 4 thuộc tính,
+đầy đủ constructor, getter, setter.
+Bổ sung thêm 2 phương thức phù hợp với lớp.
+
+- Viết chương trình cho phép tạo 1 mảng có 3 phần tử
+là các đối tượng tạo từ lớp trên.
+Các thông số của đối tượng được nhập từ bàn phím.
+Sau đó duyệt mảng và gọi thực thi 1 trong 2 phương thức trên
+của các đối tượng.
