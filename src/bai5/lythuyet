@@ -1,0 +1,48 @@
+1. Access Modifier
+- Tính bao gói: che giấu các thành phần của lớp đối với sự truy xuất từ lớp khác
+- Access modifier coi là thể hiện cụ thể của tính bao gói trong lập trình OOP
+- Nó là các từ khóa quy định về phạm vi truy cập của thành phần trong lớp hoặc bản thân lớp đó
+- Access bao gồm các từ khóa:
+    + public: cho phép truy cập ở mọi nơi trong dự án
+    + protected: cho phép truy cập với lớp ở cùng package,
+    và truy cập ở package khác nếu đó là lớp con kế thừa
+    + private: cho phép truy cập ở trong lớp, ngoài lớp không truy cập được
+    + Lưu ý: nếu không có từ khóa access,
+    khi đó thành phần mặc định nhận mức độ access là: default
+    - default: cho phép truy cập ở trong package
+- Access modifier sẽ được đặt ở đầu tiên trong câu khai báo
+- Non-Access: final, abstract, static
+    + final: cuối cùng; nếu là thuộc tính, thì sẽ không thay đổi giá trị của thuộc tính khi khai báo
+    nếu là phương thức, thì không cho phép ghi đè (overriding) phương thức
+    nếu là lớp, thì không cho phép kế thừa lớp này
+    + abstract: trừu tượng; phương thức và lớp
+    + static: xem ở dưới
+
+2. Static (Non-static)
+- Thuộc tính và phương thức không static chỉ truy cập được thông qua đối tượng
+- Thuộc tính và phương thức static là thành phần thuộc về lớp
+có thể truy cập thông qua tên lớp mà không cần tạo đối tượng
+vẫn có thể truy cập thông qua tên đối tượng (không được khuyến khích)
+
+- Thành phần static được khai báo riêng trong bộ nhớ static,
+được khai báo trước khi khai báo lớp
+=> lớp có thể gọi được thành phần static
+- Thành phần static sẽ được dùng chung
+cho lớp và tất cả các đối tượng sinh ra từ lớp đó
+==> Static: giúp giảm số lượng bộ nhớ cần lưu trữ dữ liệu;
+chia sẻ dữ liệu dùng chung giữa các đối tượng
+LƯU Ý: KHI 1 ĐỐI TƯỢNG BẤT KỲ THAY ĐỔI GIÁ TRỊ CỦA THUỘC TÍNH STATIC,
+THÌ TẤT CẢ CÁC ĐỐI TƯỢNG KHÁC VÀ CHÍNH LỚP SẼ BỊ THAY ĐỔI GIÁ TRỊ THEO
+
+- 4 khai báo cho static:
+    + static property: thuộc tính; giá trị dùng chung cho lớp và các đối tượng của lớp
+    + static method: phương thức; cho phép gọi phương thức bằng tên lớp, k cần đối tượng
+    + static class
+    + static block: khối static, phần code tự do chạy đầu tiên trong chương trình,
+    nó chạy trước cả hàm siêu main
+- Static là 1 non-access, vị trí khi khai báo sẽ nằm ngay sau access và trước kiểu dữ liệu
+LƯU Ý KHI KHAI BÁO THUỘC TÍNH HOẶC PHƯƠNG THỨC: KDL VÀ TÊN LUÔN LUÔN NẰM CẠNH NHAU
+
+- Thành phần static có thể gọi được thành phần static khác
+nhưng không gọi được thành phần non-static khác
+- Ngược lại, thành phần non-static có thể gọi được cả non-static khác và static khác
